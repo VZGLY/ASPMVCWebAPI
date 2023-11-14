@@ -1,4 +1,6 @@
-﻿using ASPMVCWebAPI.Models;
+﻿
+
+using ASPMVCWebAPI.Models;
 
 namespace ASPMVCWebAPI.Context
 {
@@ -32,5 +34,27 @@ namespace ASPMVCWebAPI.Context
     new User(24, "Éloïse.firefighter@gmail.com", "eloise", "firefighter"),
     new User(25, "Hugo.soldier@gmail.com", "hugo", "soldier"),
         };
+
+        public static User AddWithIdentity(this List<User> source, User user)
+        {
+            user.Id = Users.Max(x => x.Id) + 1;
+            Users.Add(user);
+            return user;
+        }
+
+        public static bool Update(this List<User> source, User user)
+        {
+            User element = source.Find(x => x.Id == user.Id);
+            if (element is null)
+            {
+                return false;
+            }
+
+            element.Firstname = user.Firstname;
+            element.Lastname = user.Lastname;
+            element.Email = user.Email;
+
+            return true;
+        }
     }
 }

@@ -1,13 +1,13 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-    void bold(string value)
+﻿@model List<User>;
+
+
+    <a asp-controller="User" asp-action="Create">Create New</a>
+
+    <ul>
+    @foreach (User u in @Model)
     {
-        <strong>@value</strong>
+        <li>
+            <p>@u.Firstname @u.Lastname - <a asp-controller="User" asp-action="Details" asp-route-id="@u.Id">Afficher</a> </p>
+        </li>
     }
-}
-
-<h1>Bienvenue chez les users</h1>
-
-<h2>Message = @{bold("Mon Gros Message");}</h2>
+    </ul>

@@ -1,4 +1,5 @@
 ﻿using ASPMVCWebAPI.Context;
+using ASPMVCWebAPI.Mapper;
 using ASPMVCWebAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,7 +9,7 @@ namespace ASPMVCWebAPI.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View(FakeDB.Users);
         }
 
         public IActionResult Details(int id)
@@ -30,15 +31,54 @@ namespace ASPMVCWebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(UserCreateViewModel createViewModel)
+        public IActionResult Create(UserFormViewModel createViewModel)
         {
+
+
             if (ModelState.IsValid)
             {
-                Console.WriteLine("Super formulaire valid toosa toosa");
+                FakeDB.Users.AddWithIdentity(createViewModel.ToUser());
                 return RedirectToAction("Index");
             }
             Console.WriteLine("Aaaaah mec... Pas ouf...");
             return View(createViewModel);
+        }
+
+
+
+        public IActionResult Edit(int id)
+        {
+            User user = FakeDB.Users.Find(x => x.Id == id);
+
+            if (user == null)
+            {
+                return View("NotFound");
+            }
+
+            ViewBag.EditedId = id;
+
+            return View(user.ToViewModel());
+
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int id, UserFormViewModel form)
+        {
+            if (ModelState.IsValid)
+            {
+                User user = form.ToUser(id);
+
+                if(FakeDB.Users.Update(user))
+                {
+                    Console.WriteLine("Reussi");
+                    return RedirectToAction("Details", new {id = user.Id});
+                }
+                return View("NotFound");
+            }
+
+            ViewBag.EditedId = id;
+
+            return View(form);
         }
     }
 }
