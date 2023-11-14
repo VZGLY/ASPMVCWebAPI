@@ -1,0 +1,7 @@
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Release\net6.0\PubTmp\Out\ASPMVCWebAPI.exe
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Release\net6.0\PubTmp\Out\ASPMVCWebAPI.dll
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Release\net6.0\PubTmp\Out\ASPMVCWebAPI.deps.json
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Release\net6.0\PubTmp\Out\ASPMVCWebAPI.runtimeconfig.json
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Release\net6.0\PubTmp\Out\ASPMVCWebAPI.pdb
