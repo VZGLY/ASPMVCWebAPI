@@ -1,0 +1,19 @@
+﻿@model UserFormViewModel;
+
+<form asp-controller="User" asp-action="Edit" asp-route-id="@ViewBag.EditedId" method="post">
+    <label>Email</label>
+    <input type="text" asp-for="Email" />
+    <span asp-validation-for="Email" class="text-danger"></span>
+    <br />
+    <label>Nom</label>
+    <input asp-for="Lastname" />
+
+    <span asp-validation-for="Lastname" class="text-danger"></span>
+    <br />
+    <label>Prenom</label>
+    <input asp-for="Firstname" />
+
+    <span asp-validation-for="Firstname" class="text-danger"></span>
+    <br />
+    <button type="submit">Modifier</button>
+</form>
