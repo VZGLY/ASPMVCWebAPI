@@ -8,6 +8,7 @@ namespace DAL.Entities
 {
     public class User
     {
+
         public User(int id, string email, string name, string password, DateTime creationDate, DateTime lastConnection)
         {
             Id = id;
@@ -16,6 +17,11 @@ namespace DAL.Entities
             Password = password;
             CreationDate = creationDate;
             LastConnection = lastConnection;
+        }
+
+        public User()
+        {
+            
         }
 
         public int Id { get; set; }

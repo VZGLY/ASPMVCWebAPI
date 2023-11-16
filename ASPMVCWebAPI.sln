@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPMVCWebAPI", "ASPMVCWebAPI\ASPMVCWebAPI.csproj", "{5CC1754F-DD9B-4116-B373-2011BFF39E78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPMVCWebAPI", "ASPMVCWebAPI\ASPMVCWebAPI.csproj", "{5CC1754F-DD9B-4116-B373-2011BFF39E78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{8F461326-E6C9-40BF-BC5F-17E2F9BB98C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{1DA42B99-59E1-482A-B2DD-4FD479D74F7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5CC1754F-DD9B-4116-B373-2011BFF39E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CC1754F-DD9B-4116-B373-2011BFF39E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CC1754F-DD9B-4116-B373-2011BFF39E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F461326-E6C9-40BF-BC5F-17E2F9BB98C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F461326-E6C9-40BF-BC5F-17E2F9BB98C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F461326-E6C9-40BF-BC5F-17E2F9BB98C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F461326-E6C9-40BF-BC5F-17E2F9BB98C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA42B99-59E1-482A-B2DD-4FD479D74F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA42B99-59E1-482A-B2DD-4FD479D74F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA42B99-59E1-482A-B2DD-4FD479D74F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA42B99-59E1-482A-B2DD-4FD479D74F7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

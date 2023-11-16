@@ -29,3 +29,8 @@ C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Debug\net6.0\ref
 C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Debug\net6.0\ASPMVCWebAPI.pdb
 C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Debug\net6.0\ASPMVCWebAPI.genruntimeconfig.cache
 C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Debug\net6.0\ref\ASPMVCWebAPI.dll
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\bin\Debug\net6.0\BLL.dll
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\bin\Debug\net6.0\DAL.dll
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\bin\Debug\net6.0\BLL.pdb
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\bin\Debug\net6.0\DAL.pdb
+C:\Users\BStormGavin\source\repos\ASPMVCWebAPI\ASPMVCWebAPI\obj\Debug\net6.0\ASPMVCWebAPI.csproj.CopyComplete

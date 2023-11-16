@@ -1,19 +1,21 @@
-﻿@model UserFormViewModel;
+﻿@using BLL.Models.Forms;
 
-<form asp-controller="User" asp-action="Edit" asp-route-id="@ViewBag.EditedId" method="post">
+@model UpdateUserForm;
+
+<form asp-controller="User" asp-action="Edit" asp-route-id="@Model.Id" method="post">
     <label>Email</label>
     <input type="text" asp-for="Email" />
     <span asp-validation-for="Email" class="text-danger"></span>
     <br />
     <label>Nom</label>
-    <input asp-for="Lastname" />
+    <input asp-for="Name" />
 
-    <span asp-validation-for="Lastname" class="text-danger"></span>
+    <span asp-validation-for="Name" class="text-danger"></span>
     <br />
-    <label>Prenom</label>
-    <input asp-for="Firstname" />
+    <label>Password</label>
+    <input type="password" asp-for="Password" />
 
-    <span asp-validation-for="Firstname" class="text-danger"></span>
+    <span asp-validation-for="Password" class="text-danger"></span>
     <br />
     <button type="submit">Modifier</button>
 </form>
