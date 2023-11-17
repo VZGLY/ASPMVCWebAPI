@@ -14,5 +14,8 @@
 <h3>c'est l'id @Model.Id</h3>
 <h3>Derniere connection : @Model.LastConnection.ToString()</h3>
 
+<a asp-controller="User" asp-action="Edit" asp-route-id="@Model.Id">Update</a>
+<a asp-controller="User" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+
 
 

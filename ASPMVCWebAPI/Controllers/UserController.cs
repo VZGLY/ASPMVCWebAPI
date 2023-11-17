@@ -53,6 +53,12 @@ namespace ASPMVCWebAPI.Controllers
             return View(form);
         }
 
+        public IActionResult Delete(int id)
+        {
+            _userService.Delete(id);
+
+            return RedirectToAction("Index");
+        }
 
 
         public IActionResult Edit(int id)

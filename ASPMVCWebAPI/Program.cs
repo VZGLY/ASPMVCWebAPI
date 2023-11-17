@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddTransient<IUserRepository, UserDbRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 

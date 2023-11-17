@@ -10,6 +10,8 @@ namespace BLL.Interfaces
 {
     public interface IUserService
     {
+        public int NbrOfUses { get; set; }
+
         public UserViewModel GetById(int id);
         
         public IEnumerable<UserViewModel> GetAll();
